@@ -1,6 +1,0 @@
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\bin\Debug\ProjectEuler.exe.config
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\bin\Debug\ProjectEuler.exe
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\bin\Debug\ProjectEuler.pdb
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\obj\Debug\ProjectEuler.csprojResolveAssemblyReference.cache
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\obj\Debug\ProjectEuler.exe
-C:\Users\Peter\Documents\GitHub\ElrC\ProjectEuler\obj\Debug\ProjectEuler.pdb
