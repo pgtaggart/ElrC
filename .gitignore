@@ -43,8 +43,8 @@ Temporary Items
 .apdisk
 
 #removing bin dir
-bin/*
-obj/*
+bin
+obj
 
 #ignoring visual studio specific
 .vs
