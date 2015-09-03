@@ -44,6 +44,7 @@ Temporary Items
 
 #removing bin dir
 bin/*
+obj/*
 
 #ignoring visual studio specific
 .vs
