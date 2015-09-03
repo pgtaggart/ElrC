@@ -8,5 +8,7 @@ namespace ProjectEuler
 {
     class Constants
     {
+        public static String RESOURCE_LOCATION = @"c:\";
+
     }
 }

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CombinationProblems.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Fraction.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="NewProblems.cs" />
