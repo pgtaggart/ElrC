@@ -43,5 +43,7 @@ Temporary Items
 .apdisk
 
 #removing bin dir
-ProjectEuler/bin
+bin/*
+
+.vcs
 
