@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectEuler;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -478,7 +479,7 @@ namespace ConsoleApplication1
             Console.Out.WriteLine("Reading Square Numbers from file...");
             var s = Stopwatch.StartNew();
 
-            var squares = File.ReadAllLines(@"c:\LocalFolder\MISC\squares.txt")
+            var squares = File.ReadAllLines(Constants.RESOURCE_LOCATION + "squares.txt")
                 .Select(line => line.Split(',').Select(UInt64.Parse).ToArray()).ToList();
 
             var squaresSet = new HashSet<UInt64>();
@@ -500,7 +501,7 @@ namespace ConsoleApplication1
             Console.Out.WriteLine("Reading Square Numbers as Strings from file...");
             var s = Stopwatch.StartNew();
 
-            var squares = File.ReadAllLines(@"c:\LocalFolder\MISC\squares.txt").ToList();
+            var squares = File.ReadAllLines(Constants.RESOURCE_LOCATION + "squares.txt").ToList();
 
             var squaresSet = new HashSet<string>();
 
@@ -519,7 +520,7 @@ namespace ConsoleApplication1
         public void WriteListOfSqaureNumbers(long limit)
         {
 
-            var writetext = new StreamWriter(@"c:\LocalFolder\MISC\squares.txt");
+            var writetext = new StreamWriter(Constants.RESOURCE_LOCATION + "squares.txt");
 
             var b = new BigInteger(1);
 

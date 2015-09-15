@@ -1,4 +1,5 @@
 ﻿
+using ProjectEuler;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -118,7 +119,7 @@ namespace ConsoleApplication1
         {
 
             //get distinct entries from reading the file
-            var sequences = File.ReadAllLines(@"c:\LocalFolder\MISC\p079_keylog.txt").Distinct().Select(c => c.ToCharArray()).ToList();
+            var sequences = File.ReadAllLines(Constants.RESOURCE_LOCATION + "p079_keylog.txt").Distinct().Select(c => c.ToCharArray()).ToList();
 
             Console.Out.WriteLine("Number of distinct entries in the file {0}", sequences.Count);
 
@@ -188,7 +189,7 @@ namespace ConsoleApplication1
             };
 
             Console.Out.WriteLine("Matrix Sum: {0}, expected: {1}", _lib.GetMinSumThroughMatrixRightAndDownOnly(matrix), 2427);
-            Console.Out.WriteLine("Big Matrix Sum: {0}, expected: {1}", _lib.GetMinSumThroughMatrixRightAndDownOnly(_lib.ReadBigMatrixFile(@"c:\LocalFolder\MISC\p081_matrix.txt")), 427337);
+            Console.Out.WriteLine("Big Matrix Sum: {0}, expected: {1}", _lib.GetMinSumThroughMatrixRightAndDownOnly(_lib.ReadBigMatrixFile(Constants.RESOURCE_LOCATION + "p081_matrix.txt")), 427337);
         }
 
         /**
@@ -649,7 +650,7 @@ namespace ConsoleApplication1
 
             Console.Out.WriteLine();
 
-            var romanNumeralsFile = File.ReadAllLines(@"c:\LocalFolder\MISC\p089_roman.txt").ToList();
+            var romanNumeralsFile = File.ReadAllLines(Constants.RESOURCE_LOCATION + "p089_roman.txt").ToList();
 
             var numberOfCharactersInFile = romanNumeralsFile.Sum(romanNumeralSequence => romanNumeralSequence.Length);
 
@@ -666,7 +667,7 @@ namespace ConsoleApplication1
 
             var newLength = newNumeralObjects.Sum(romanNumeral => romanNumeral.Numeral.Length);
 
-            //var writetext = new StreamWriter(@"c:\LocalFolder\MISC\p89.csv");
+            //var writetext = new StreamWriter(Constants.RESOURCE_LOCATION + "p89.csv");
 
             //writetext.WriteLine("Numeral, Valid, Int Value, Subtraction, Parsed Numeral, value, valid, comment");
 
@@ -887,7 +888,7 @@ namespace ConsoleApplication1
             var wordSet = new HashSet<string>();
 
             //read words into hash
-            foreach (var word in File.ReadAllLines(@"c:\LocalFolder\MISC\p098_words.txt").Select(c => c.Split(',')).ToList().SelectMany(line => line))
+            foreach (var word in File.ReadAllLines(Constants.RESOURCE_LOCATION + "p098_words.txt").Select(c => c.Split(',')).ToList().SelectMany(line => line))
             {
                 wordSet.Add(word.Replace("\"", ""));
             }
@@ -1023,7 +1024,7 @@ namespace ConsoleApplication1
 
         public void Problem99()
         {
-            var exps = File.ReadAllLines(@"c:\LocalFolder\MISC\p099_base_exp.txt").Select(c => c.Split(',')).ToArray();
+            var exps = File.ReadAllLines(Constants.RESOURCE_LOCATION + "p099_base_exp.txt").Select(c => c.Split(',')).ToArray();
 
             var greatest = 0.0;
             var result = 0;
